@@ -4,15 +4,10 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Ria Hope</title>
+        <title>Ria Hope Kink</title>
       </Head>
       <div>
-        <p>
-          <a href="/kink">Kink</a>
-        </p>
-        <p>
-          <a href="/therapy">Therapy</a>
-        </p>
+        <p>Ria Hope Kink</p>
       </div>
     </>
   );
