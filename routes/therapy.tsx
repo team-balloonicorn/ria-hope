@@ -1,4 +1,5 @@
 import { Head } from "$fresh/runtime.ts";
+import Navigation from "../components/Navigation.tsx";
 
 const testimonials = [
   {
@@ -21,6 +22,7 @@ export default function Home() {
       <Head>
         <title>Ria Hope Therapy</title>
       </Head>
+      <Navigation headings={["thing1", "thing2"]} />
       <div>
         <p>Ria Hope Therapy</p>
       </div>

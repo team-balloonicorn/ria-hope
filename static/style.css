@@ -1,3 +1,11 @@
 html {
-  background-color: blueviolet;
+  background-color: rgb(244, 244, 244);
+}
+
+.nav-container {
+  display: flex;
+}
+
+.nav {
+  
 }
