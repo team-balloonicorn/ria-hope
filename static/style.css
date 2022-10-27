@@ -1,11 +1,50 @@
+:root {
+  --text-dark: rgb(84 73 73);
+  --text-light: rgb(137 94 94);
+}
+
 html {
-  background-color: rgb(244, 244, 244);
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Noto Serif Display', serif;
+  font-family: 'Playfair Display', serif;
+  font-family: 'Playfair Display SC', serif;
 }
 
-.nav-container {
+body {
+  background-color: rgb(242 241 238);
+}
+
+header {
   display: flex;
+  text-transform: capitalize;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.nav {
-  
+.title {
+  width: 60vw;
+  padding-left: 4vw;
+  padding-right: 2vw;
+  text-align: right;
+}
+
+header text {
+  font-family: 'Playfair Display', serif;
+  fill: var(--text-light);
+}
+
+header svg {
+  width: 100%;
+}
+
+header h2 {
+  color: var(--text-dark);
+  text-transform: capitalize;
+  letter-spacing: 3px;
+  font-size: max(2vh, 3vw);
+  font-family: 'Playfair Display SC', serif;
+}
+
+header img {
+  width: 40vw;
 }
