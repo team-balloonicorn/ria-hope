@@ -2,6 +2,8 @@ type NavbarProps = {
   headings: string[];
 };
 
+// TODO expand type to contain href so home can be implemented
+
 export function headingId(x: string): string {
   return x.toLowerCase().replaceAll(" ", "-").replaceAll(/[^-a-z0-9]/g, "");
 }

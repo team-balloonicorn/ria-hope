@@ -12,10 +12,29 @@ export default function Home() {
             <a href="/therapy">Therapy</a>
           </li>
           <li>
-            <a id="kinklink" href="/kink">kink</a>
+            <a id="kinklink" href="#age-confirmation">kink</a>
+            {/* <a id="kinklink" href="/kink">kink</a> */}
           </li>
         </ul>
       </nav>
+
+      {/* TODO if this is a seperate page, could you go directly to kink after seeing it once during a session? */}
+      <div id="age-confirmation" class="overlay">
+        <div class="popup">
+          <button>
+            <a class="close" href="/">&times;</a>
+          </button>
+          <h2>I confirm I am over 18</h2>
+          <div class="content">
+            The following contents and services are recommended for adults only
+            and may be NSFW
+          </div>
+          <button>
+            <a class="continue" href="/kink">Continue</a>
+          </button>
+        </div>
+      </div>
+
       <header>
         <div class="title">
           <h1>
