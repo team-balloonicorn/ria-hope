@@ -48,6 +48,7 @@ body {
   border-width: 2px;
   border-radius: 10px;
   background-color: var(--background-color);
+  transition: all 0.3s ease-out;
 }
 
 #index a:hover {
@@ -99,4 +100,68 @@ header h2 {
 header img {
   width: 40vw;
   z-index: -1;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 500ms ease-in-out;
+  color: var(--text-dark);
+}
+
+.popup h2 {
+  margin-top: 0;
+  font-family: Tahoma, Arial, sans-serif;
+  color: var(--text-dark);
+}
+.popup .continue {
+  /* position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-weight: bold; */
+  text-decoration: none;
+  color: var(--text-dark);
+  font-size: max(1vh, 2vw);
+  text-transform: uppercase;
+  /* font-family: 'Playfair Display', serif; */
+padding: 1vw;
+}
+.popup .continue:hover {
+  background-color: rgb(246 246 246);
+  text-shadow: 0.1vw 0.3vh lightgrey;
+  box-shadow: 0.3vw 0.7vh lightgrey;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+@media screen and (max-width: 700px){
+  .box{
+    width: 70%;
+  }
+  .popup{
+    width: 70%;
+  }
 }
