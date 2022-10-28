@@ -7,12 +7,14 @@ export default function Home() {
         <title>Ria Hope</title>
       </Head>
       <nav id="index">
-        <p>
-          <a href="/therapy">Therapy</a>
-        </p>
-        <p>
-          <a id="kinklink" href="/kink">kink</a>
-        </p>
+        <ul>
+          <li>
+            <a href="/therapy">Therapy</a>
+          </li>
+          <li>
+            <a id="kinklink" href="/kink">kink</a>
+          </li>
+        </ul>
       </nav>
       <header>
         <div class="title">
