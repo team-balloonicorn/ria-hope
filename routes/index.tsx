@@ -18,8 +18,12 @@ export default function Home() {
         </ul>
       </nav>
 
+      {/* TODO if this is a seperate page, could you go directly to kink after seeing it once during a session? */}
       <div id="age-confirmation" class="overlay">
         <div class="popup">
+          <button>
+            <a class="close" href="/">&times;</a>
+          </button>
           <h2>I confirm I am over 18</h2>
           <div class="content">
             The following contents and services are recommended for adults only

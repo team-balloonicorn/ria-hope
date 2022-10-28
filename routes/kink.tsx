@@ -7,7 +7,8 @@ export default function Home() {
       <Head>
         <title>Ria Hope Kink</title>
       </Head>
-      <Navigation headings={["thing1", "thing2"]} />
+      {/* TODO Add link to home OR re-type navigation */}
+      <Navigation headings={["HOME", "thing1", "thing2"]} />
       <div>
         <p>Ria Hope Kink</p>
       </div>
