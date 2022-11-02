@@ -136,13 +136,15 @@ header img {
   text-transform:uppercase;
 }
 
-.main-navigation   li a{
+.main-navigation   li a {
   display:flex;
   text-align:center;
   text-decoration:none;
   color: var(--text-dark);
   padding:1rem;
+  font-size: max(1.5vh, 1.5vw);
 }
+
 
 .main-navigation  li a:hover{
   border-radius: 10px;
@@ -151,8 +153,87 @@ header img {
 }
 
 @media (min-width: 800px) {
-.main-navigation     .menu{
+.main-navigation .menu{
     flex-direction:row;
     justify-content:space-between;
   }
 }
+
+/* TESTIMONIAL SECTION */
+.testimonial {
+  font-size: max(1.5vh, 1.5vw);
+  color: var(--text-dark);
+}
+
+.testimonial h2 {
+  padding: 0px 1vw 0px 1vw;
+  margin: unset;
+}
+
+.testimonial ul {
+  list-style: none;
+  padding: 0px 1vw 0px 1vw;
+  margin: unset;
+}
+
+.testimonial-container {
+  justify-content: center;
+  display: flex;
+}
+
+.testimonials {
+  justify-content: space-around;
+  display: flex;
+  padding: 3vw;
+  flex-direction: column;
+}
+
+@media (min-width: 800px) {
+.testimonials{
+    flex-direction:row;
+    justify-content:space-between;
+    padding: 1vw;
+  }
+}
+
+.testimonial li {
+  list-style: none;
+  padding: 1vw;
+  /* padding-right: 1.5vw; */
+}
+
+.testimonial figcaption {
+  font-family: 'Playfair Display SC', serif;
+  display: flex;
+  align-items: center;
+  color: var(--text-light);
+  font-size: 2vw;
+}
+
+.testimonial figure {
+  margin: unset;
+}
+
+.testimonial figcaption::before {
+  /* font-family: "Trebuchet MS", sans-serif; */
+  font-family: "Georgia", sans-serif;
+  margin-top: 2.6vw;
+  margin-right: 1vw;
+  content: open-quote;
+  quotes: "“" "”" "“" "”";
+  font-size: 5vw;
+}
+
+.testimonial blockquote {
+  font-size: 1.5vw;
+  font-family: 'Playfair Display';
+  font-family: 'Montserrat', sans-serif;
+  /* font-family: 'Arial Narrow', sans-serif; */
+  /* font-stretch: extra-condensed; */
+  /* letter-spacing: 0.1vw; */
+  letter-spacing: 0.1vh;
+  margin: unset;
+  /* margin-left: 1vh; */
+  margin-right: 2vw;
+}
+
