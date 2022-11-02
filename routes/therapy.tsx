@@ -19,11 +19,13 @@ const testimonials = [
 export default function Home() {
   return (
     <>
+      <Navigation
+        headings={["work with me", "about", "testimonials", "contact"]}
+      />
       <Head>
         <title>Ria Hope Therapy</title>
       </Head>
-      <Navigation headings={["thing1", "thing2"]} />
-      <div>
+      <div class="therapy-title">
         <p>Ria Hope Therapy</p>
       </div>
       <TestimonialsSection />
@@ -34,7 +36,9 @@ export default function Home() {
 function TestimonialsSection() {
   return (
     <aside>
-      <h2>Client Reviews</h2>
+      <a id="#testimonials">
+        <h2>Testimonials</h2>
+      </a>
       <ul>
         {testimonials.map((testimonial) => (
           <li>

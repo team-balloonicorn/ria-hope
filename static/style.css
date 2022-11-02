@@ -100,3 +100,59 @@ header img {
   width: 40vw;
   z-index: -1;
 }
+
+/* THERAPY */
+.therapy-title {
+  display: flex;
+  justify-content: center;
+}
+
+.therapy-title p {
+  font-size: max(2vh, 3vw);
+  margin-top: 1vh;
+  color: var(--text-dark);
+
+}
+
+/* NAVIGATION */
+.main-navigation{
+  border-top:1px solid #ddd;
+  border-bottom:1px solid #ddd;
+}
+
+.main-navigation ul{
+  margin:0;
+  padding:0;
+}
+
+.main-navigation .menu{
+  display:flex;  
+  flex-direction:column;
+}
+
+.main-navigation  li{
+  display:block;
+  list-style-type:none;
+  text-transform:uppercase;
+}
+
+.main-navigation   li a{
+  display:flex;
+  text-align:center;
+  text-decoration:none;
+  color: var(--text-dark);
+  padding:1rem;
+}
+
+.main-navigation  li a:hover{
+  border-radius: 10px;
+  background: var(--text-light);
+  color:#fff;
+}
+
+@media (min-width: 800px) {
+.main-navigation     .menu{
+    flex-direction:row;
+    justify-content:space-between;
+  }
+}

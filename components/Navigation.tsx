@@ -9,16 +9,19 @@ export function headingId(x: string): string {
 export default function Navbar(props: NavbarProps) {
   return (
     // start of nav and top menu
-    <div>
-      <div class="nav-container">
-        <nav>
-          {props.headings.map((heading) => (
+    <nav class="main-navigation">
+      <ul class="menu">
+        <li>
+          <a href="/">Home</a>
+        </li>
+        {props.headings.map((heading) => (
+          <li>
             <a href={`#${headingId(heading)}`}>
               {heading}
             </a>
-          ))}
-        </nav>
-      </div>
-    </div>
+          </li>
+        ))}
+      </ul>
+    </nav>
   );
 }
