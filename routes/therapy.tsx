@@ -28,10 +28,12 @@ export default function Home() {
       <Head>
         <title>Ria Hope Therapy</title>
       </Head>
-      <div class="therapy-title">
-        <p>Ria Hope Therapy</p>
-      </div>
-      <TestimonialsSection />
+      <main>
+        <div class="therapy-title">
+          <p>Ria Hope Therapy</p>
+        </div>
+        <TestimonialsSection />
+      </main>
     </>
   );
 }

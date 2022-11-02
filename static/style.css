@@ -16,6 +16,11 @@ body {
   margin: 0px;
 }
 
+main {
+  width: 90%;
+  margin: 0 auto;
+}
+
 #index {
   width: 100%;
   padding-top: 1vh;
@@ -109,7 +114,7 @@ header img {
 
 .therapy-title p {
   font-size: max(2vh, 3vw);
-  margin-top: 1vh;
+  /* margin-top: 1vh; */
   color: var(--text-dark);
 
 }
@@ -172,7 +177,7 @@ header img {
 
 .testimonial ul {
   list-style: none;
-  padding: 0px 1vw 0px 1vw;
+  padding: unset;
   margin: unset;
 }
 
@@ -192,7 +197,7 @@ header img {
 .testimonials{
     flex-direction:row;
     justify-content:space-between;
-    padding: 1vw;
+    padding: 0%;
   }
 }
 
@@ -228,12 +233,8 @@ header img {
   font-size: 1.5vw;
   font-family: 'Playfair Display';
   font-family: 'Montserrat', sans-serif;
-  /* font-family: 'Arial Narrow', sans-serif; */
-  /* font-stretch: extra-condensed; */
-  /* letter-spacing: 0.1vw; */
   letter-spacing: 0.1vh;
   margin: unset;
-  /* margin-left: 1vh; */
   margin-right: 2vw;
 }
 
