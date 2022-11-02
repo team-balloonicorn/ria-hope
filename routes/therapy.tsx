@@ -4,15 +4,18 @@ import Navigation from "../components/Navigation.tsx";
 const testimonials = [
   {
     author: "Dave",
-    text: "Hello there",
+    text:
+      "Testimonials are short quotes from people who love your brand. It's a great way to convince customers to try your services",
   },
   {
     author: "Sara",
-    text: "Hello you",
+    text:
+      "Testimonials are short quotes from people who love your brand. It's a great way to convince customers to try your services",
   },
   {
     author: "Bilal",
-    text: "Hello mum",
+    text:
+      "Testimonials are short quotes from people who love your brand. It's a great way to convince customers to try your services",
   },
 ];
 
@@ -35,19 +38,23 @@ export default function Home() {
 
 function TestimonialsSection() {
   return (
-    <aside>
+    <aside class="testimonial">
       <a id="#testimonials">
         <h2>Testimonials</h2>
       </a>
       <ul>
-        {testimonials.map((testimonial) => (
-          <li>
-            <figure>
-              <figcaption>{testimonial.author}</figcaption>
-              <blockquote>{testimonial.text}</blockquote>
-            </figure>
-          </li>
-        ))}
+        <div class="testimonial-container">
+          <div class="testimonials">
+            {testimonials.map((testimonial) => (
+              <li>
+                <figure>
+                  <figcaption>{testimonial.author}</figcaption>
+                  <blockquote>{testimonial.text}</blockquote>
+                </figure>
+              </li>
+            ))}
+          </div>
+        </div>
       </ul>
     </aside>
   );
