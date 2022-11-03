@@ -7,10 +7,17 @@ export default function Home() {
       <Head>
         <title>Ria Hope Kink</title>
       </Head>
-      <Navigation headings={["thing1", "thing2"]} />
-      <div>
-        <p>Ria Hope Kink</p>
-      </div>
+      <body class="kink">
+        <Navigation
+          headings={["thing1", "thing2"]}
+          styleModifier="kink"
+        />
+        <main>
+          <div class="page-title kink">
+            <p>Ria Hope Kink</p>
+          </div>
+        </main>
+      </body>
     </>
   );
 }

@@ -1,5 +1,6 @@
 type NavbarProps = {
   headings: string[];
+  styleModifier: string;
 };
 
 export function headingId(x: string): string {
@@ -9,7 +10,8 @@ export function headingId(x: string): string {
 export default function Navbar(props: NavbarProps) {
   return (
     // start of nav and top menu
-    <nav class="main-navigation">
+
+    <nav class={"main-navigation " + props.styleModifier}>
       <ul class="menu">
         <li>
           <a href="/">Home</a>
