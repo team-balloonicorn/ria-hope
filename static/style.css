@@ -9,6 +9,7 @@ html {
   font-family: 'Noto Serif Display', serif;
   font-family: 'Playfair Display', serif;
   font-family: 'Playfair Display SC', serif;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -123,6 +124,9 @@ header img {
 .main-navigation{
   border-top:1px solid #ddd;
   border-bottom:1px solid #ddd;
+  position: sticky;
+  top: 0;
+  background-color: var(--background-color);
 }
 
 .main-navigation ul{
@@ -171,7 +175,8 @@ header img {
 }
 
 .testimonial h2 {
-  padding: 0px 1vw 0px 1vw;
+  padding: 5% 1vw 0% 1vw;
+  /* padding: 0px 1vw 0px 1vw; */
   margin: unset;
 }
 
@@ -236,5 +241,76 @@ header img {
   letter-spacing: 0.1vh;
   margin: unset;
   margin-right: 2vw;
+}
+
+/* WORK WITH ME SECTION */
+
+.work-with-me {
+  font-size: max(1.5vh, 1.5vw);
+  color: var(--text-dark);
+}
+
+.work-with-me h2 {
+  padding: 5% 1vw 3% 1vw;
+  margin: unset;
+}
+
+.work-with-me ul {
+  list-style: none;
+  padding: unset;
+  margin: unset;
+}
+
+.work-with-me-container {
+  justify-content: center;
+  display: flex;
+}
+
+.work-with-me-sections {
+  justify-content: space-around;
+  display: flex;
+  padding: 3vw;
+  flex-direction: column;
+}
+
+@media (min-width: 800px) {
+.work-with-me-sections{
+    flex-direction:row;
+    justify-content:space-between;
+    padding: 0%;
+  }
+}
+
+.work-with-me li {
+  list-style: none;
+  padding: 1vw;
+  /* padding-right: 1.5vw; */
+}
+
+.work-with-me figure {
+  margin: unset;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.work-with-me figcaption {
+  font-family: 'Playfair Display SC', serif;
+  color: var(--text-light);
+  font-size: 2vw;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 5%;
+  text-align: center;
+}
+
+.work-with-me figure img {
+  max-width: 60vw;
+}
+
+@media (min-width: 800px) {
+.work-with-me figure img {
+    max-width: 20vw;
+  }
 }
 
