@@ -1,7 +1,12 @@
 :root {
   --text-dark: rgb(84 73 73);
+  --text-dark-kink: rgb(0 0 0 );
   --text-light: rgb(137 94 94);
+  --text-light-kink: rgb(102 33 33);
   --background-color: rgb(242 241 238);
+  --background-color-kink: rgb(243 222 206);
+  --line-color: rgb(221 221 221);
+  --line-color-kink: rgb(223 189 189 / 50%);
 }
 
 html {
@@ -122,8 +127,8 @@ header img {
 
 /* NAVIGATION */
 .main-navigation{
-  border-top:1px solid #ddd;
-  border-bottom:1px solid #ddd;
+  border-top:1px solid var(--line-color);
+  border-bottom:1px solid var(--line-color);
   position: sticky;
   top: 0;
   background-color: var(--background-color);
