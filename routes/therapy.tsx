@@ -32,16 +32,19 @@ export default function Home() {
         <div class="therapy-title">
           <p>Ria Hope Therapy</p>
         </div>
+        <WorkWithMeSection />
         <TestimonialsSection />
       </main>
     </>
   );
 }
 
+// TODO work with me section like testimonials below with images
+
 function TestimonialsSection() {
   return (
     <aside class="testimonial">
-      <a id="#testimonials">
+      <a id="testimonials">
         <h2>Testimonials</h2>
       </a>
       <ul>
@@ -52,6 +55,48 @@ function TestimonialsSection() {
                 <figure>
                   <figcaption>{testimonial.author}</figcaption>
                   <blockquote>{testimonial.text}</blockquote>
+                </figure>
+              </li>
+            ))}
+          </div>
+        </div>
+      </ul>
+    </aside>
+  );
+}
+
+const workWithMe = [
+  {
+    src: "work-image-1.jpeg",
+    alt: "white girl in denim looking thoughtful",
+    caption: "Personal dvmntp sessions",
+  },
+  {
+    src: "work-image-2.jpeg",
+    alt: "girl with angel wings in sunset looking dreamy",
+    caption: "Online courses workshops",
+  },
+  {
+    src: "work-image-3.jpeg",
+    alt: "girl in beautiful garden looking into a mirror curiously",
+    caption: "BDSM & kink for couples",
+  },
+];
+
+function WorkWithMeSection() {
+  return (
+    <aside class="work-with-me">
+      <a id="work-with-me">
+        <h2>Work With Me</h2>
+      </a>
+      <ul>
+        <div class="work-with-me-container">
+          <div class="work-with-me-sections">
+            {workWithMe.map((section) => (
+              <li>
+                <figure>
+                  <figcaption>{section.caption}</figcaption>
+                  <img src={section.src} alt={section.alt}></img>
                 </figure>
               </li>
             ))}
