@@ -1,6 +1,6 @@
 :root {
   --text-dark: rgb(84 73 73);
-  --text-dark-kink: rgb(0 0 0 );
+  --text-dark-kink: rgb(93 3 3 );
   --text-light: rgb(137 94 94);
   --text-light-kink: rgb(102 33 33);
   --background-color: rgb(242 241 238);
@@ -345,3 +345,31 @@ body.kink   {
   }
 }
 
+/* IMAGE LEFT SECTION */
+
+section.image-left {
+  display: flex;
+  color: var(--text-dark-kink);
+}
+
+section.image-left h2 {
+  text-transform: capitalize;
+  letter-spacing: 3px;
+  font-size: max(2vh, 3vw);
+  font-family: 'Playfair Display SC', serif;
+  margin-top: unset;
+}
+
+section.image-left p {
+  font-family: 'Montserrat', sans-serif;
+  padding-right: 5%;
+  font-size: max(10px, 2vw);
+}
+
+section.image-left div.image-container {
+  min-width: 33%;
+}
+
+section.image-left .image-container img {
+  width: 100%;
+}
