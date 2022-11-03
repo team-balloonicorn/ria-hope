@@ -362,7 +362,7 @@ section.image-left h2 {
 
 section.image-left p {
   font-family: 'Montserrat', sans-serif;
-  padding-right: 5%;
+  padding-right: 10%;
   font-size: max(10px, 2vw);
 }
 
@@ -372,4 +372,12 @@ section.image-left div.image-container {
 
 section.image-left .image-container img {
   width: 100%;
+}
+
+#splat {
+  width: 130%;
+  height: 100%; 
+  transform: translate(-12%, -84%) rotate(0deg); 
+  position: relative;
+  z-index: -1;
 }
