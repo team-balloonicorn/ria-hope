@@ -4,7 +4,8 @@
   --text-light: rgb(137 94 94);
   --text-light-kink: rgb(102 33 33);
   --background-color: rgb(242 241 238);
-  --background-color-kink: rgb(243 222 206);
+  /* --background-color-kink: rgb(243 222 206); */
+  --background-color-kink: rgb(255 252 252);
   --line-color: rgb(221 221 221);
   --line-color-kink: rgb(223 189 189 / 50%);
 }
@@ -20,6 +21,10 @@ html {
 body {
   background-color: var(--background-color);
   margin: 0px;
+}
+
+body.kink   {
+  background-color: var(--background-color-kink);
 }
 
 main {
@@ -113,16 +118,24 @@ header img {
 }
 
 /* THERAPY */
-.therapy-title {
+.page-title {
   display: flex;
   justify-content: center;
 }
 
-.therapy-title p {
+.page-title p {
   font-size: max(2vh, 3vw);
   /* margin-top: 1vh; */
   color: var(--text-dark);
+}
 
+.page-title.kink p {
+  color: var(--text-dark-kink);
+}
+
+/* KINK */
+body.kink   {
+  background-color: var(--background-color-kink);
 }
 
 /* NAVIGATION */
@@ -132,6 +145,12 @@ header img {
   position: sticky;
   top: 0;
   background-color: var(--background-color);
+}
+
+.main-navigation.kink {
+  border-top:1px solid var(--line-color-kink);
+  border-bottom:1px solid var(--line-color-kink);
+  background-color: var(--background-color-kink);
 }
 
 .main-navigation ul{
@@ -150,7 +169,7 @@ header img {
   text-transform:uppercase;
 }
 
-.main-navigation   li a {
+.main-navigation li a {
   display:flex;
   text-align:center;
   text-decoration:none;
@@ -159,11 +178,18 @@ header img {
   font-size: max(1.5vh, 1.5vw);
 }
 
+.main-navigation.kink li a {
+  color: var(--text-dark-kink);
+}
 
 .main-navigation  li a:hover{
   border-radius: 10px;
   background: var(--text-light);
   color:#fff;
+}
+
+.main-navigation.kink  li a:hover{
+  background: var(--text-light-kink);
 }
 
 @media (min-width: 800px) {

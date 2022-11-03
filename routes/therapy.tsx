@@ -22,14 +22,15 @@ const testimonials = [
 export default function Home() {
   return (
     <>
-      <Navigation
-        headings={["work with me", "about", "testimonials", "contact"]}
-      />
       <Head>
         <title>Ria Hope Therapy</title>
       </Head>
+      <Navigation
+        headings={["work with me", "about", "testimonials", "contact"]}
+        styleModifier={"n"}
+      />
       <main>
-        <div class="therapy-title">
+        <div class="page-title">
           <p>Ria Hope Therapy</p>
         </div>
         <WorkWithMeSection />
@@ -69,12 +70,12 @@ const workWithMe = [
   {
     src: "work-image-1.jpeg",
     alt: "white girl in denim looking thoughtful",
-    caption: "Personal dvmntp sessions",
+    caption: "Personal 1 to 1 development",
   },
   {
     src: "work-image-2.jpeg",
     alt: "girl with angel wings in sunset looking dreamy",
-    caption: "Online courses workshops",
+    caption: "Online courses & workshops",
   },
   {
     src: "work-image-3.jpeg",
