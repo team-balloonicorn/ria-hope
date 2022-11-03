@@ -38,6 +38,12 @@ export default function Home() {
                 src="image-left.jpeg"
                 alt="Ria smiles holding a mug of tea or coffee"
               />
+              <img
+                src="border-kink.png"
+                alt="Brushstroke Paint"
+                id="splat"
+              >
+              </img>
             </div>
           </section>
         </main>
