@@ -6,7 +6,8 @@ export default function Home() {
       <Head>
         <title>Ria Hope</title>
       </Head>
-      <nav id="index">
+      {
+        /* <nav id="index">
         <ul>
           <li>
             <a href="/therapy">Therapy</a>
@@ -15,7 +16,8 @@ export default function Home() {
             <a id="kinklink" href="/kink">kink</a>
           </li>
         </ul>
-      </nav>
+      </nav> */
+      }
       <header>
         <div class="title">
           <h1>
@@ -43,6 +45,20 @@ export default function Home() {
           <img src="ria-profile.jpg" alt="Ria Hope smiling" />
         </div>
       </header>
+      <section class="nsfw">
+        <div class="nsfw-text">
+          <h3>
+            the following page contents may not be suitable for work (NSFW)
+          </h3>
+          <h3>
+            We recomend the following services for those over 18 years of age.
+            Please click continue to acknowledge that you would like to proceed
+          </h3>
+        </div>
+        <div class="button">
+          <a href="/therapy">Continue</a>
+        </div>
+      </section>
     </>
   );
 }
