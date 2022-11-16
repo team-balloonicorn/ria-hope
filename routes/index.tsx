@@ -6,18 +6,6 @@ export default function Home() {
       <Head>
         <title>Ria Hope</title>
       </Head>
-      {
-        /* <nav id="index">
-        <ul>
-          <li>
-            <a href="/therapy">Therapy</a>
-          </li>
-          <li>
-            <a id="kinklink" href="/kink">kink</a>
-          </li>
-        </ul>
-      </nav> */
-      }
       <header>
         <div class="title">
           <h1>
