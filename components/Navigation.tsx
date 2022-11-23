@@ -16,6 +16,12 @@ export default function Navbar(props: NavbarProps) {
         <li>
           <a href="/">Home</a>
         </li>
+        <li>
+          <a href="/kink">Kink</a>
+        </li>
+        <li>
+          <a href="/therapy">Therapy</a>
+        </li>
         {props.headings.map((heading) => (
           <li>
             <a href={`#${headingId(heading)}`}>
