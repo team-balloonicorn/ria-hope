@@ -4,7 +4,6 @@
   --text-light: rgb(137 94 94);
   --text-light-kink: rgb(102 33 33);
   --background-color: rgb(242 241 238);
-  /* --background-color-kink: rgb(243 222 206); */
   --background-color-kink: rgb(255 252 252);
   --line-color: rgb(221 221 221);
   --line-color-kink: rgb(223 189 189 / 50%);
@@ -86,7 +85,6 @@ header img {
 }
 
 /* NSFW Continue button */
-
 .nsfw {
   display: flex;
   margin: 2% 10% 2% 10%;
@@ -206,7 +204,6 @@ body.kink   {
   text-decoration:none;
   color: var(--text-dark);
   padding:1rem;
-  /* font-size: max(1.5vh, 1.5vw); */
   font-size: 22px;
 }
 
@@ -225,9 +222,7 @@ body.kink   {
 }
 
 /* WORK WITH ME SECTION */
-
 .work-with-me {
-  /* font-size: max(1.5vh, 1.5vw); */
   color: var(--text-dark);
 }
 
@@ -273,7 +268,6 @@ body.kink   {
 .work-with-me li {
   list-style: none;
   padding: 1vw;
-  /* padding-right: 1.5vw; */
 }
 
 .work-with-me figure {
@@ -286,7 +280,6 @@ body.kink   {
 .work-with-me figcaption {
   font-family: 'Playfair Display SC', serif;
   color: var(--text-light);
-  /* font-size: 2vw; */
   font-size: 20px;
   padding-left: 5%;
   padding-right: 5%;
@@ -306,7 +299,6 @@ body.kink   {
 
 @media (min-width: 800px) {
 .work-with-me figure img {
-    /* max-width: 20vw; */
     max-width: min(20vw, 350px);
   }
 }
@@ -359,7 +351,6 @@ body.kink   {
 .testimonial li {
   list-style: none;
   padding: 1vw;
-  /* padding-right: 1.5vw; */
 }
 
 .testimonial figcaption {
@@ -367,7 +358,6 @@ body.kink   {
   display: flex;
   align-items: center;
   color: var(--text-light);
-  /* font-size: 2vw; */
   font-size: 25px;
 }
 
@@ -387,13 +377,11 @@ body.kink   {
   margin-right: 10px;
   content: open-quote;
   quotes: "“" "”" "“" "”";
-  /* font-size: 5vw; */
   font-size: 50px;
 }
 
 @media (min-width: 800px) {
   .testimonial figcaption::before {
-  /* font-size: 5vw; */
   font-size: min(5vw, 70px);
   margin-top: min(2.6vw, 44px);
   margin-right: min(1vw, 17px);
@@ -410,7 +398,6 @@ body.kink   {
 }
 
 /* IMAGE LEFT SECTION */
-
 section.image-left {
   display: flex;
   flex-direction: column;
@@ -427,7 +414,6 @@ section.image-left {
 section.image-left h2 {
   text-transform: capitalize;
   letter-spacing: 3px;
-  /* font-size: max(2vh, 3vw); */
   font-size: max(30px, 3vw);
   font-family: 'Playfair Display SC', serif;
   margin-top: unset;
@@ -442,7 +428,6 @@ section.image-left h2 {
 section.image-left p {
   font-family: 'Montserrat', sans-serif;
   padding-right: 10%;
-  /* font-size: max(10px, 2vw); */
   font-size: 22px;
 }
 
@@ -454,7 +439,6 @@ section.image-left div.image-container {
   section.image-left div.image-container {
     min-width: min(33%, 500px);
   }
-  
 }
 
 section.image-left .image-container img {
