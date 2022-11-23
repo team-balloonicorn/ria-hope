@@ -16,6 +16,10 @@ export default function Navbar(props: NavbarProps) {
         <li>
           <a href="/">Home</a>
         </li>
+        {/* This is a temporary link for client */}
+        <li>
+          <a href="/kink">Kink</a>
+        </li>
         {props.headings.map((heading) => (
           <li>
             <a href={`#${headingId(heading)}`}>
