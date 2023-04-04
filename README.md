@@ -10,7 +10,9 @@ deno run --allow-env --allow-read --allow-net main.ts
 ```
 
 ## Notes
-Edensor free only has one .otf, so it only comes in 1 weight, which is why it isn't appearing everywhere.
+- Edensor free only has one .otf, so it only comes in 1 weight, which may be why it isn't appearing everywhere?
+- fontsize branch is outdated
 
 ## To Do
-- put title and subtitle in SVGs (see main branch) so we can vary size of the free Edensor font
+- favicon from logo
+- helping you find ground section
