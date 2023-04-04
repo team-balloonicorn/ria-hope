@@ -7,6 +7,7 @@ export default function App(props: AppProps) {
       <Head>
         <meta name="description" content="Ria Hope Website" />
         <link rel="stylesheet" href={asset("/style.css")} />
+        <link rel="shortcut icon" type="image/svg" href="/logo-small-svg.svg" />
       </Head>
       <props.Component />
     </>

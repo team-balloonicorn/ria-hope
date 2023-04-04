@@ -14,5 +14,4 @@ deno run --allow-env --allow-read --allow-net main.ts
 - fontsize branch is outdated
 
 ## To Do
-- favicon from logo
 - helping you find ground section
