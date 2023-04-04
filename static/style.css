@@ -1,6 +1,11 @@
+@font-face {
+  font-family: 'edensor-free';
+  src: url('/fonts/edensor/edensor-free.otf') format('opentype');
+}
+
 :root {
   --text-dark: rgb(84 73 73);
-  --text-dark-kink: rgb(93 3 3 );
+  --text-dark-kink: rgb(93 3 3);
   --text-light: rgb(137 94 94);
   --text-light-kink: rgb(102 33 33);
   --background-color: rgb(242 241 238);
@@ -11,10 +16,11 @@
 }
 
 html {
-  font-family: 'Montserrat', sans-serif;
+  /* font-family: 'Montserrat', sans-serif;
   font-family: 'Noto Serif Display', serif;
   font-family: 'Playfair Display', serif;
-  font-family: 'Playfair Display SC', serif;
+  font-family: 'Playfair Display SC', serif; */
+  font-family: 'edensor-free', serif;
   scroll-behavior: smooth;
 }
 
@@ -23,7 +29,7 @@ body {
   margin: 0px;
 }
 
-body.kink   {
+body.kink {
   background-color: var(--background-color-kink);
 }
 
@@ -51,7 +57,7 @@ main {
 }
 
 #index a {
-  font-family: 'Playfair Display', serif;
+  font-family: 'edensor-free', serif;
   flex-direction: row;
   text-transform: uppercase;
   text-decoration: none;
@@ -96,7 +102,7 @@ header {
 }
 
 header text {
-  font-family: 'Playfair Display', serif;
+  font-family: 'edensor', serif;
   fill: var(--text-light);
 }
 
@@ -109,7 +115,7 @@ header h2 {
   text-transform: capitalize;
   letter-spacing: 3px;
   font-size: max(2vh, 3vw);
-  font-family: 'Playfair Display SC', serif;
+  font-family: 'edensor', serif;
 }
 
 header img {
@@ -155,7 +161,7 @@ header img {
 
 .nsfw .button a:hover {
   background: var(--text-light);
-  color:#fff;
+  color: #fff;
 }
 
 /* THERAPY */
@@ -175,47 +181,47 @@ header img {
 }
 
 /* KINK */
-body.kink   {
+body.kink {
   background-color: var(--background-color-kink);
 }
 
 /* NAVIGATION */
-.main-navigation{
-  border-top:1px solid var(--line-color);
-  border-bottom:1px solid var(--line-color);
+.main-navigation {
+  border-top: 1px solid var(--line-color);
+  border-bottom: 1px solid var(--line-color);
   position: sticky;
   top: 0;
   background-color: var(--background-color);
 }
 
 .main-navigation.kink {
-  border-top:1px solid var(--line-color-kink);
-  border-bottom:1px solid var(--line-color-kink);
+  border-top: 1px solid var(--line-color-kink);
+  border-bottom: 1px solid var(--line-color-kink);
   background-color: var(--background-color-kink);
 }
 
-.main-navigation ul{
-  margin:0;
-  padding:0;
+.main-navigation ul {
+  margin: 0;
+  padding: 0;
 }
 
-.main-navigation .menu{
-  display:flex;  
-  flex-direction:column;
+.main-navigation .menu {
+  display: flex;
+  flex-direction: column;
 }
 
-.main-navigation  li{
-  display:block;
-  list-style-type:none;
-  text-transform:uppercase;
+.main-navigation li {
+  display: block;
+  list-style-type: none;
+  text-transform: uppercase;
 }
 
 .main-navigation li a {
-  display:flex;
-  text-align:center;
-  text-decoration:none;
+  display: flex;
+  text-align: center;
+  text-decoration: none;
   color: var(--text-dark);
-  padding:1rem;
+  padding: 1rem;
   font-size: max(1.5vh, 1.5vw);
 }
 
@@ -223,20 +229,20 @@ body.kink   {
   color: var(--text-dark-kink);
 }
 
-.main-navigation  li a:hover{
+.main-navigation li a:hover {
   border-radius: 10px;
   background: var(--text-light);
-  color:#fff;
+  color: #fff;
 }
 
-.main-navigation.kink  li a:hover{
+.main-navigation.kink li a:hover {
   background: var(--text-light-kink);
 }
 
 @media (min-width: 800px) {
-.main-navigation .menu{
-    flex-direction:row;
-    justify-content:space-between;
+  .main-navigation .menu {
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
 
@@ -271,9 +277,9 @@ body.kink   {
 }
 
 @media (min-width: 800px) {
-.testimonials{
-    flex-direction:row;
-    justify-content:space-between;
+  .testimonials {
+    flex-direction: row;
+    justify-content: space-between;
     padding: 0%;
   }
 }
@@ -285,7 +291,7 @@ body.kink   {
 }
 
 .testimonial figcaption {
-  font-family: 'Playfair Display SC', serif;
+  font-family: 'edensor-free', serif;
   display: flex;
   align-items: center;
   color: var(--text-light);
@@ -298,7 +304,7 @@ body.kink   {
 
 .testimonial figcaption::before {
   /* font-family: "Trebuchet MS", sans-serif; */
-  font-family: "Georgia", sans-serif;
+  font-family: "edensor-free", sans-serif;
   margin-top: 2.6vw;
   margin-right: 1vw;
   content: open-quote;
@@ -308,8 +314,8 @@ body.kink   {
 
 .testimonial blockquote {
   font-size: 1.5vw;
-  font-family: 'Playfair Display';
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'edensor-free';
+  font-family: 'edensor-free', sans-serif;
   letter-spacing: 0.1vh;
   margin: unset;
   margin-right: 2vw;
@@ -346,9 +352,9 @@ body.kink   {
 }
 
 @media (min-width: 800px) {
-.work-with-me-sections{
-    flex-direction:row;
-    justify-content:space-between;
+  .work-with-me-sections {
+    flex-direction: row;
+    justify-content: space-between;
     padding: 0%;
   }
 }
@@ -381,7 +387,7 @@ body.kink   {
 }
 
 @media (min-width: 800px) {
-.work-with-me figure img {
+  .work-with-me figure img {
     max-width: 20vw;
   }
 }
@@ -397,7 +403,7 @@ section.image-left h2 {
   text-transform: capitalize;
   letter-spacing: 3px;
   font-size: max(2vh, 3vw);
-  font-family: 'Playfair Display SC', serif;
+  font-family: 'edensor-free', serif;
   margin-top: unset;
 }
 
@@ -417,8 +423,8 @@ section.image-left .image-container img {
 
 #splat {
   width: 130%;
-  height: 100%; 
-  transform: translate(-12%, -84%) rotate(0deg); 
+  height: 100%;
+  transform: translate(-12%, -84%) rotate(0deg);
   position: relative;
   z-index: -1;
 }

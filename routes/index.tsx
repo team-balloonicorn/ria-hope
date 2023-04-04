@@ -7,6 +7,9 @@ export default function Home() {
         <title>Ria Hope</title>
       </Head>
       <header>
+        <div class="logo">
+          <img src="logo-small-svg.svg" alt="Ria Hope logo" />
+        </div>
         <div class="title">
           <h1>
             <svg viewBox="0 0 158 26">
