@@ -6,15 +6,17 @@ export default function Home() {
       <Head>
         <title>Ria Hope</title>
       </Head>
-      <header>
-        <div class="logo">
-          <img src="logo-small-svg.svg" alt="Ria Hope logo" />
+      <div class="logo">
+        <div class="logo-graphic">
+          <svg viewBox="0 0 158 38">
+            <img src="logo-small-svg.svg" alt="Ria Hope logo" />
+          </svg>
         </div>
-        <div class="title">
+        <div class="logo-text">
           <h1>
-            <svg viewBox="0 0 158 26">
+            <svg viewBox="0 0 158 38">
               <text
-                x="6"
+                x="3"
                 y="25"
                 textLength="100%"
                 lengthAdjust="spacingAndGlyphs"
@@ -23,10 +25,14 @@ export default function Home() {
               letter-spacing: 6px;
           "
               >
-                RIA HOPE
+                ria hope
               </text>
             </svg>
           </h1>
+        </div>
+      </div>
+      <header>
+        <div class="title">
           <h2>
             Therapy, sexuality,<br></br>
             intimacy, queer identity
