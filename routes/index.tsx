@@ -40,16 +40,12 @@ export default function Home() {
                 </svg>
               </div>
               <div class="logo-text">
-                <svg viewBox="0 0 120 38">
+                <svg viewBox="0 0 125 38">
                   <text
                     x="0"
                     y="25"
-                    textLength="100%"
-                    lengthAdjust="spacingAndGlyphs"
-                    style="
-              text-align: right; 
-              letter-spacing: 2px;
-          "
+                    // textLength="135%"
+                    // lengthAdjust="spacingAndGlyphs"
                   >
                     ria hope
                   </text>
@@ -122,7 +118,7 @@ export default function Home() {
           </section>
         </div>
         <footer>
-          <a href="mailto:riahopetherapies@gmail.com" class="shadow">
+          <a href="mailto:riahopetherapies@gmail.com" class="link-bold">
             <h2>riahopetherapies@gmail.com</h2>
           </a>
         </footer>

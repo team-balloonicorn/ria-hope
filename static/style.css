@@ -49,9 +49,9 @@ a {
   text-decoration: none;
 }
 
-a.shadow h2:hover {
-  /* font-weight: normal; */
-  text-shadow: 0px 0px 2px var(--text-dark);
+a.link-bold h2:hover {
+  /* font-weight: bold; */
+  color: var(--text-light-kink);
 }
 
 .page {
@@ -156,13 +156,16 @@ footer h2 {
 .logo-text {
   width: 50%;
   max-width: 71%;
+  text-align: center;
 }
 
-.logo text {
+.logo .logo-text svg text {
   font-family: 'edensor-free', serif;
   fill: var(--text-red);
   font-size: 2em;
   font-weight: bold;
+  text-align: center;
+  letter-spacing: 2px;
 }
 
 .dot-container {
@@ -203,7 +206,8 @@ footer h2 {
 
 @media screen and (min-width: 768px) {
   .page {
-    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
   }
 
   header {
@@ -214,16 +218,18 @@ footer h2 {
 
   .logo {
     display: flex;
-    align-items: flex-start;
-    width: 40%;
-    padding-top: 0%;
+    align-items: center;
+    /* width: 40%; */
+    padding: 2%;
+    padding-right: 70%;
+    margin-left: -15%;
   }
 
   .logo-graphic {
     display: block;
     width: 35%;
-    padding-left: 6%;
-    padding-top: 7%;
+    /* padding-left: 6%;
+    padding-top: 7%; */
   }
 
   .title-section {
