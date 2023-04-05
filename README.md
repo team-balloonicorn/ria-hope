@@ -16,3 +16,6 @@ deno run --allow-env --allow-read --allow-net main.ts
 ## To Do
 - merge favi branch
 - helping you find ground section is only mobile size - make responsive. Branch is 'ground'
+- change remotes to balloonicorn
+- use dalle design
+- remove vs-code-mac folder, create general notes and shortcuts files in Notes
