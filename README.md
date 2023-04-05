@@ -14,5 +14,5 @@ deno run --allow-env --allow-read --allow-net main.ts
 - fontsize branch is outdated
 
 ## To Do
-- favicon from logo
-- helping you find ground section
+- merge favi branch
+- helping you find ground section is only mobile size - make responsive. Branch is 'ground'

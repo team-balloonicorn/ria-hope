@@ -58,13 +58,34 @@ export default function Home() {
           <section class="title-section">
             <div class="title">
               <h2>
-                Therapy, sexuality,<br></br>
-                intimacy, queer identity
+                helping you <br></br> find ground
               </h2>
             </div>
-            <div class="image">
-              <img src="ria-profile.jpg" alt="Ria Hope smiling" />
+            <div class="dot-container">
+              <div class="dot">
+                <svg
+                  width="182"
+                  height="75"
+                  viewBox="0 0 182 75"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M115.4 36.569C115.4 50.138 104.341 61.1379 90.7 61.1379C77.0586 61.1379 66 50.138 66 36.569C66 22.9999 77.0586 12 90.7 12C104.341 12 115.4 22.9999 115.4 36.569Z"
+                    fill="#933837"
+                  />
+                </svg>
+              </div>
             </div>
+          </section>
+          <section class="subtitle">
+            <h3>
+              energy work &amp; earthing<br></br>
+              intimacy &amp; sexuality support<br></br>
+              nature recconection<br></br>
+              herbal remedies<br></br>
+              embodiment<br></br>
+            </h3>
           </section>
         </header>
         <section class="nsfw">
