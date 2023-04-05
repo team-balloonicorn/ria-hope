@@ -58,30 +58,32 @@ export default function Home() {
           <section class="title-section">
             <div class="title">
               <h2>
-                Therapy, sexuality,<br></br>
-                intimacy, queer identity
+                helping you <br></br> find ground
               </h2>
             </div>
-            <div class="image">
-              <img src="ria-profile.jpg" alt="Ria Hope smiling" />
+            <div class="dot">
+              <svg
+                viewBox="0 0 182 75"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M115.4 36.569C115.4 50.138 104.341 61.1379 90.7 61.1379C77.0586 61.1379 66 50.138 66 36.569C66 22.9999 77.0586 12 90.7 12C104.341 12 115.4 22.9999 115.4 36.569Z"
+                  fill="#933837"
+                />
+              </svg>
             </div>
           </section>
+          <section class="subtitle">
+            <h3>
+              energy work &amp; earthing<br></br>
+              intimacy &amp; sexuality support<br></br>
+              nature recconection<br></br>
+              herbal remedies<br></br>
+              embodiment<br></br>
+            </h3>
+          </section>
         </header>
-        <section class="nsfw">
-          <div class="nsfw-text">
-            <h3>
-              the following page contents may not be suitable for work (NSFW)
-            </h3>
-            <h3>
-              We recomend the following services for those over 18 years of age.
-              Please click continue to acknowledge that you would like to
-              proceed
-            </h3>
-          </div>
-          <div class="button">
-            <a href="/therapy">Continue</a>
-          </div>
-        </section>
       </div>
     </>
   );

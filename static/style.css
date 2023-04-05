@@ -90,48 +90,34 @@ main {
 
 .page {
   display: block;
-  width: 80%;
+  width: 85%;
   height: 100%;
   margin: 0 auto;
 }
 
 .logo {
-  /* Add styles for a vertical flexbox */
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 5%;
 }
 
-@media screen and (min-width: 768px) {
-  .page {
-    width: 90%;
-  }
+.title-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
 
-  header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .logo {
-    display: flex;
-    align-items: flex-start;
-    width: 100%;
-    padding-top: 0%;
-  }
-
-  .logo-graphic {
-    display: block;
-    width: 35%;
-    padding-left: 6%;
-    padding-top: 7%;
-  }
-
-  .title-section {
-    display: block;
-    width: 60%;
-  }
+.title h2 {
+  letter-spacing: 2px;
+  font-size: max(4vh, 7vw);
+  font-family: 'edensor-free', serif;
+  text-align: center;
+  font-weight: bold;
+  color: var(--text-red);
+  margin-block-start: 0.83em;
+  margin-block-end: 0.3em;
 }
 
 .logo-graphic {
@@ -152,37 +138,87 @@ main {
   font-weight: bold;
 }
 
-.title-section {
+.dot-container {
   display: flex;
-  /* text-transform: capitalize; */
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
+  padding-top: 5%;
 }
 
-.title {
-  width: 60vw;
-  padding-left: 4vw;
-  padding-right: 2vw;
-  text-align: right;
+.dot {
+  width: 30%;
 }
 
-.title-section svg {
-  width: 100%;
-}
-
-.title-section h2 {
-  color: var(--text-red);
-  /* text-transform: capitalize; */
-  letter-spacing: 3px;
-  font-size: max(2vh, 3vw);
+.subtitle h3 {
   font-family: 'edensor-free', serif;
-  /* font-weight: 400; */
+  text-align: center;
+  font-size: max(3vh, 5vw);
+  font-weight: bold;
+  color: var(--text-red);
+  margin-block-start: 0.3em;
+  margin-block-end: 0.3em;
 }
 
-.title-section img {
-  width: 40vw;
-  z-index: -1;
+
+/* extra narrow mobile screen */
+@media screen and (max-width: 280px) {
+  .page {
+    width: 95%;
+  }
 }
+
+@media screen and (min-width: 768px) {
+  .page {
+    width: 90%;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .logo {
+    display: flex;
+    align-items: flex-start;
+    width: 40%;
+    padding-top: 0%;
+  }
+
+  .logo-graphic {
+    display: block;
+    width: 35%;
+    padding-left: 6%;
+    padding-top: 7%;
+  }
+
+  .title-section {
+    display: flex;
+    width: 100%;
+    align-items: center;
+  }
+
+  .title h2 {
+    font-size: max(4vh, 4vw);
+  }
+
+  .subtitle h3 {
+    font-size: max(3vh, 3vw);
+  }
+
+  .dot-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    padding-top: 0%;
+  }
+
+  .dot {
+    width: 10%;
+  }
+}
+
 
 /* NSFW Continue button */
 
@@ -233,7 +269,6 @@ main {
 
 .page-title p {
   font-size: max(2vh, 3vw);
-  /* margin-top: 1vh; */
   color: var(--text-dark);
 }
 
